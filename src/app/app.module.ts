@@ -18,6 +18,11 @@ import { DialogRegComponent } from './dialog-reg/dialog-reg.component'
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import { BuyernavComponent } from './buyernav/buyernav.component';
+import { BuyerSearchComponent } from './buyer-search/buyer-search.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -26,7 +31,9 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     NavigationComponent,
     LandingComponent,
-    DialogRegComponent
+    DialogRegComponent,
+    BuyernavComponent,
+    BuyerSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,10 @@ import {MatCardModule} from '@angular/material/card';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [
     

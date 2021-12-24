@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogRegComponent } from '../dialog-reg/dialog-reg.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -9,7 +10,7 @@ import { DialogRegComponent } from '../dialog-reg/dialog-reg.component';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(public dialog:MatDialog) { }
+  constructor(public dialog: MatDialog , private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -22,9 +23,14 @@ export class LandingComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
- 
+
     });
   }
+
+  openBuyer() :void {
+      this.router.navigate(['buyer']);
+  }
+
 }
 
 
