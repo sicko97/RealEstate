@@ -8,13 +8,13 @@
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="topnav">
+  <mat-sidenav-content class = "topnav">
     <mat-toolbar  color="primary">
       
       <img src="/assets/logo.png">
       <h1>Real Estate App</h1>
 
-        <div fxFlex fxLayout fxFlexAlign="end" fx>
+        <div fxFlex fxLayout fxLayoutAlign="end" fxLayoutGap ="50px">
         <a routerLink="#" >Search</a>
         <a routerLink="#" >Favourites</a>
         <a routerLink="#">MyAccount</a>
@@ -26,7 +26,9 @@
       </button>
 
     </mat-toolbar>
+    <div class="table">
     <router-outlet>
     </router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
