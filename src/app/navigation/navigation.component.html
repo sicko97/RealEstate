@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false" position="end" fxHide.gt-xs>
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
@@ -10,20 +10,13 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="white">
-      <img src="/assets/logo.jpg">
+      <img src="/assets/logo.png">
       <h1>Real Estate App</h1>
       <button fxFlex fxLayoutAlign="end" fxHide.gt-xs type="button" aria-label="Toggle sidenav" mat-icon-button
         (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <div fxFlex fxLayout fxLayoutAlign="end" fxLayoutGap="50px" fxHide.xs *ngIf="!isAuthenticated">
-
-      </div>
-      <div fxFlex fxLayout fxLayoutAlign="end" fxLayoutGap="50px" fxHide.xs *ngIf="isAuthenticated">
-        <a routerLink="#">Home</a>
-        <a routerLink="#">About</a>
-        <a routerLink="#">Contact</a>
-      </div>
+  
     </mat-toolbar>
 
     <app-landing>
