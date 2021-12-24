@@ -1,0 +1,49 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .wrapper {
+    display : flex ;
+    justify-content: center;}
+
+    .loginForm {
+        display : flex;
+        justify-content: top;
+        align-items: center;
+        flex-direction: column;
+        margin : 50px;
+     
+        max-width: 500px;
+        min-width: 150px;
+        height: 800px;
+        padding : 60px;
+        background-color: white;
+        border-radius: 8px;
+       
+    }
+    
+    h1{
+        padding-right: 0px;
+        margin-right: 119px;
+    }
+    p{
+        padding-right: 0px;
+        margin-right : 140px;
+        margin-top: 20px;
+    }
+    
+    .inputText {
+        width: 400px;
+        padding : 10px;
+        opacity: 1;
+    }
+    
+    button { 
+        width : 100px;
+    }

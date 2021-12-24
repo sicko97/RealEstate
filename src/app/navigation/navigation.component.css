@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+  color : white;
+}
+
+a:hover{
+  color:gray;
+}
+
+img{
+  height: 70px;
+  width: 70px;
+}
+
+h1{
+  font-size: 20pt;
+  font-weight: bold;
+  color: rgb(180, 153, 153);
+  letter-spacing: 3px;
+}
+
+
