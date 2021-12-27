@@ -23,6 +23,9 @@ import { BuyerSearchComponent } from './buyer-search/buyer-search.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DialogLoginComponent } from './dialog-login/dialog-login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -33,7 +36,8 @@ import { MatSortModule } from '@angular/material/sort';
     LandingComponent,
     DialogRegComponent,
     BuyernavComponent,
-    BuyerSearchComponent
+    BuyerSearchComponent,
+    DialogLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatCardModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [
     
